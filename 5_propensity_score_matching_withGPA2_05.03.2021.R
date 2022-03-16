@@ -165,6 +165,10 @@ summary(prop.matching)
 abs.stand.mean.diff.plot <- plot(summary(prop.matching, interactions = FALSE),
      var.order = "unmatched")
 
+
+
+
+
 abs.stand.mean.diff.plot
 devtools::install_github("ngreifer/cobalt")
 
@@ -244,6 +248,17 @@ plot(prop.matching, type = "qq", interactive = FALSE,
 # Re-run descriptive statistics
 summary.tab.prop <- match.data.final %>% select(adj.tx2, gender, age, no_of_BrMs, volume, localization_of_BrMs, GPA2, extracran.met, adj.RTx2, 
                                                 primary_tumor.Rx2, dose_of_RTx, UICC2)
+
+
+
+library(prodlim)
+library(survival)
+library(Publish)
+match.data
+quantile(prodlim(Hist(survival,censoring)~1,data=match.data,reverse=TRUE))
+
+match.data.final
+quantile(prodlim(Hist(survival,censoring)~1,data=match.data.final,reverse=TRUE))
 
 
 summary.tab.prop %>% tbl_summary(

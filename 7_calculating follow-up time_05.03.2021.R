@@ -1,4 +1,6 @@
-#calculating follow-up time (http://publicifsv.sund.ku.dk/~tag/Teaching/share/R-tutorials/Advanced-statistics/SurvivalAnalysis.html)
+#calculating follow-up time 
+#http://publicifsv.sund.ku.dk/~tag/Teaching/share/R-tutorials/Advanced-statistics/SurvivalAnalysis.html
+#https://publicifsv.sund.ku.dk/~tag/Teaching/share/R-tutorials/Advanced-statistics/SurvivalAnalysis.html
 library(prodlim)
 library(survival)
 library(Publish)
